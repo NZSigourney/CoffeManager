@@ -9,4 +9,8 @@ class ContactController extends Controller
     public function getContact(){
         return view('navbar.contact');
     }
+
+    public function getAbout(){
+        return view('navbar.about');
+    }
 }

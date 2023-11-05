@@ -26,3 +26,5 @@ Route::get('/menu', [MenuController::class, 'index'])->name('menu');
 Route::get('/table', [TableController::class, 'getTable'])->name('table');
 
 Route::get('/contact', [ContactController::class, 'getContact'])->name('contact');
+
+Route::get('/about', [ContactController::class, 'getAbout'])->name('about');
