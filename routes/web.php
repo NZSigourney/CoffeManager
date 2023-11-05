@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\TableController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +22,7 @@ Route::get('/', function () {
 
 
 Route::get('/menu', [MenuController::class, 'index'])->name('menu');
+
+Route::get('/table', [TableController::class, 'getTable'])->name('table');
+
+Route::get('/contact', [ContactController::class, 'getContact'])->name('contact');
