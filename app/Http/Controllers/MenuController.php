@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class MenuController extends Controller
@@ -11,7 +12,8 @@ class MenuController extends Controller
      */
     public function index()
     {
-        return view('navbar.menu');
+        $products = Product::all();
+        return view('navbar.menu', ['products' => $products]);
     }
 
     /**
