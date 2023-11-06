@@ -17,8 +17,8 @@
                           
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="{{route('about')}}">About Us</a>
-                                {{-- <a class="dropdown-item" href="blog.html">Blog</a>
-                                <a class="dropdown-item" href="testimonials.html">Testimonials</a> --}}
+                                {{-- <a class="dropdown-item" href="blog.html">Blog</a> --}}
+                                <a class="dropdown-item" href="testimonials.html">Testimonials</a>
                             </div>
                         </li>
                         <li><a href="{{route('contact')}}">Contact</a></li> 
