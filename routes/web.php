@@ -28,3 +28,7 @@ Route::get('/table', [TableController::class, 'getTable'])->name('table');
 Route::get('/contact', [ContactController::class, 'getContact'])->name('contact');
 
 Route::get('/about', [ContactController::class, 'getAbout'])->name('about');
+
+Route::get('/dangnhap', function(){
+    return view('Login.login');
+});
