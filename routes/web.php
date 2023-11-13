@@ -3,6 +3,7 @@
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\TableController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,6 +30,9 @@ Route::get('/contact', [ContactController::class, 'getContact'])->name('contact'
 
 Route::get('/about', [ContactController::class, 'getAbout'])->name('about');
 
-Route::get('/dangnhap', function(){
-    return view('Login.login');
-});
+// Route::get('/dangnhap', function(){
+//     return view('Login.login');
+// });
+
+Route::get('/dangnhap', [UserController::class, 'getLogin'])->name('Login');
+Route::get('/dangnhap', [UserController::class, 'postLogin'])->name('postLogin');
